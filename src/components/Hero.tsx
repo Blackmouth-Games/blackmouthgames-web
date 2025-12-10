@@ -3,11 +3,11 @@ import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-4">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(12,90%,55%,0.08)_0%,_transparent_70%)]" />
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 left-1/4 w-48 h-48 md:w-96 md:h-96 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 right-1/4 w-48 h-48 md:w-96 md:h-96 bg-accent/5 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="animate-slide-up">
@@ -18,7 +18,7 @@ const Hero = () => {
           />
         </div>
         
-        <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+        <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
           <span className="text-foreground">Innovative </span>
           <span className="text-primary">Multiplayer</span>
           <br />
